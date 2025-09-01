@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mar & Sabor • Restaurante do Porto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="restaurante-page">
+    <main class="principal">
+        <section class="caixa-grande">
+            <header class="cabecalho-principal">
+                <h1 class="logotipo">Mar & Sabor</h1>
+                <nav class="navegacao-principal">
+                    <a href="Pagina Inicial.html" class="item-menu">Início</a>
+                    <a href="pedidos.html" class="item-menu">Pedidos</a>
+                    <a href="perfil.html" class="item-menu">Perfil</a>
+                </nav>
+            </header>
+            <div class="secao-conteudo">
+                <h3 class="titulo-secao" style="font-size: 2rem;">Restaurante do Porto</h3>
+                <p style="text-align: center; color: #555;">Especializado em frutos do mar frescos e saborosos.</p>
+                <div class="grade-menu">
+                    <div class="secao-menu">
+                        <h4>Entradas</h4>
+                        <div class="item-menu-prato">
+                            <div class="informacao-prato">
+                                <h5>Casquinha de Siri</h5>
+                                <p>Saborosa casquinha de siri gratinada com queijo parmesão.</p>
+                            </div>
+                            <span class="preco-prato">R$ 25,00</span>
+                            <button class="adicionar-carrinho" data-nome="Casquinha de Siri"
+                                data-preco="25.00">+</button>
+                        </div>
+                        <div class="item-menu-prato">
+                            <div class="informacao-prato">
+                                <h5>Bolinho de Bacalhau</h5>
+                                <p>Porção com 6 unidades, acompanhada de molho tártaro da casa.</p>
+                            </div>
+                            <span class="preco-prato">R$ 35,00</span>
+                            <button class="adicionar-carrinho" data-nome="Bolinho de Bacalhau"
+                                data-preco="35.00">+</button>
+                        </div>
+                    </div>
+                    <div class="secao-menu">
+                        <h4>Pratos Principais</h4>
+                        <div class="item-menu-prato">
+                            <div class="informacao-prato">
+                                <h5>Moqueca de Peixe</h5>
+                                <p>Filé de peixe cozido em leite de coco e azeite de dendê, com camarões e pimentões.
+                                </p>
+                            </div>
+                            <span class="preco-prato">R$ 89,90</span>
+                            <button class="adicionar-carrinho" data-nome="Moqueca de Peixe"
+                                data-preco="89.90">+</button>
+                        </div>
+                        <div class="item-menu-prato">
+                            <div class="informacao-prato">
+                                <h5>Fettuccine com Camarão</h5>
+                                <p>Massa fresca com suculentos camarões salteados no azeite e alho.</p>
+                            </div>
+                            <span class="preco-prato">R$ 75,50</span>
+                            <button class="adicionar-carrinho" data-nome="Fettuccine com Camarão"
+                                data-preco="75.50">+</button>
+                        </div>
+                    </div>
+                    <div class="secao-menu">
+                        <h4>Sobremesas</h4>
+                        <div class="item-menu-prato">
+                            <div class="informacao-prato">
+                                <h5>Pudim de Leite</h5>
+                                <p>Receita tradicional, cremoso e com calda de caramelo.</p>
+                            </div>
+                            <span class="preco-prato">R$ 18,00</span>
+                            <button class="adicionar-carrinho" data-nome="Pudim de Leite" data-preco="18.00">+</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="Carrinho de Compras.html"><button id="abrir-carrinho" class="botao-pedido">Ver
+                        Carrinho</button></a>
+            </div>
+            <div id="caixa-mensagem" class="caixa-mensagem"></div>
+            <footer class="rodape-principal">
+                <p>© 2025 Mar & Sabor. Todos os direitos reservados.</p>
+            </footer>
+        </section>
+    </main>
+    <script src="pedidos.js"></script>
+</body>
+
+</html>

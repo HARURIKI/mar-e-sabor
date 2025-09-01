@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mar & Sabor • Seu Carrinho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="carrinho-page">
+    <main class="principal">
+        <section class="caixa-grande">
+            <header class="cabecalho-principal">
+                <h1 class="logotipo">Mar & Sabor</h1>
+                <nav class="navegacao-principal">
+                    <a href="Pagina Inicial.html" class="item-menu">Início</a>
+                    <a href="pedidos.html" class="item-menu">Pedidos</a>
+                    <a href="perfil.html" class="item-menu">Perfil</a>
+                </nav>
+            </header>
+            <div class="secao-conteudo conteudo-carrinho">
+                <h2>Seu Carrinho</h2>
+                <ul id="lista-carrinho" class="lista-carrinho">
+                    <!-- Itens do carrinho serão inseridos aqui pelo JavaScript -->
+                </ul>
+                <p id="carrinho-vazio" class="carrinho-vazio" style="display: none;">Seu carrinho está vazio.</p>
+                <div class="total-carrinho">
+                    Total: <span id="total-carrinho">R$ 0,00</span>
+                </div>
+                <div class="botoes-carrinho">
+                    <button class="botao-pedido botao-finalizar">Finalizar Pedido</button>
+                    <a href="restaurante.html" class="botao-pedido botao-voltar">Voltar ao Menu</a>
+                </div>
+            </div>
+            <footer class="rodape-principal">
+                <p>© 2025 Mar & Sabor. Todos os direitos reservados.</p>
+            </footer>
+        </section>
+    </main>
+    <script src="pedidos.js"></script>
+</body>
+
+</html>

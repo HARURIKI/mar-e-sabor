@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mar & Sabor • Cadastro Restaurante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <main class="principal" role="main">
+        <section class="caixa" aria-label="Formulário de cadastro para restaurantes">
+            <h1>Cadastre seu restaurante</h1>
+            <p class="subtitulo">Junte-se a nós para alcançar novos clientes! 📈</p>
+
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nome-restaurante">Nome do Restaurante</label>
+                    <input id="nome-restaurante" name="nome-restaurante" type="text" placeholder="Nome do seu negócio"
+                        required />
+                </div>
+
+                <div class="campo">
+                    <label for="email-restaurante-cadastro">E-mail</label>
+                    <input id="email-restaurante-cadastro" name="email" type="email"
+                        placeholder="seurestaurante@exemplo.com" required />
+                </div>
+
+                <div class="campo">
+                    <label for="cnpj">CNPJ</label>
+                    <input id="cnpj" name="cnpj" type="text" placeholder="xx.xxx.xxx/xxxx-xx" required />
+                </div>
+
+                <div class="campo">
+                    <label for="senha-restaurante-cadastro">Senha</label>
+                    <input id="senha-restaurante-cadastro" name="senha" type="password"
+                        placeholder="Crie uma senha segura" required />
+                </div>
+
+                <div class="campo">
+                    <label for="confirmar-senha-restaurante">Confirmar senha</label>
+                    <input id="confirmar-senha-restaurante" name="confirmar" type="password"
+                        placeholder="Repita sua senha" required />
+                </div>
+
+                <div class="botoes">
+                    <button class="botao botao-primario" type="submit">Cadastrar</button>
+                    <a href="login-restaurante.html">
+                        <button class="botao botao-secundario" type="button">Já sou parceiro</button>
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
