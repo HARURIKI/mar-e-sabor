@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mar & Sabor • Seu Carrinho</title>
+    <title>Mar & Sabor • Pagamento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -23,19 +23,27 @@
                     <a href="perfil.html" class="item-menu">Perfil</a>
                 </nav>
             </header>
-            <div class="secao-conteudo conteudo-carrinho">
-                <h2>Seu Carrinho</h2>
-                <ul id="lista-carrinho" class="lista-carrinho">
-                    <!-- Itens do carrinho serão inseridos aqui pelo JavaScript -->
-                </ul>
-                <p id="carrinho-vazio" class="carrinho-vazio" style="display: none;">Seu carrinho está vazio.</p>
-                <div class="total-carrinho">
-                    Total: <span id="total-carrinho">R$ 0,00</span>
-                </div>
-                <div class="botoes-carrinho">
-                    <a href="pagamento.html" class="botao-pedido botao-finalizar">Finalizar Pedido</a>
-                    <a href="restaurante.html" class="botao-pedido botao-voltar">Voltar ao Menu</a>
-                </div>
+            <div class="secao-conteudo conteudo-pagamento">
+                <h2>Finalizar Pagamento</h2>
+                <form id="formulario-pagamento" class="formulario-pagamento">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="endereco">Endereço de Entrega / Ponto</label>
+                    <input type="text" id="endereco" name="endereco" required>
+
+                    <label for="pagamento">Método de Pagamento</label>
+                    <select id="pagamento" name="pagamento" required>
+                        <option value="pix">Pix</option>
+                        <option value="credito">Cartão de Crédito</option>
+                        <option value="debito">Cartão de Débito</option>
+                    </select>
+                    
+                    <div class="botoes-pagamento">
+                        <a href="carrinho.html" class="botao-pedido botao-voltar">Voltar</a>
+                        <button type="submit" class="botao-pagamento">Pagar</button>
+                    </div>
+                </form>
             </div>
             <footer class="rodape-principal">
                 <p>© 2025 Mar & Sabor. Todos os direitos reservados.</p>

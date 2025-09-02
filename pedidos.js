@@ -154,3 +154,35 @@ document.addEventListener('DOMContentLoaded', () => {
         mostrarNotificacao('Pedido finalizado com sucesso!');
     }
 });
+
+// finalização do pagamento
+
+document.getElementById('formulario-pagamento').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const nome = document.getElementById('nome').value;
+            const endereco = document.getElementById('endereco').value;
+            const metodoPagamento = document.getElementById('pagamento').value;
+            
+            // Aqui você pode pegar os itens do carrinho, por exemplo
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            
+            let mensagem = `Olá, gostaria de finalizar meu pedido!\n\n`;
+            mensagem += `Nome: ${nome}\n`;
+            mensagem += `Endereço: ${endereco}\n`;
+            mensagem += `Método de Pagamento: ${metodoPagamento}\n\n`;
+            
+            mensagem += `Itens do Pedido:\n`;
+            let total = 0;
+            carrinho.forEach(item => {
+                mensagem += `- ${item.nome} (${item.quantidade}x): R$ ${(item.preco * item.quantidade).toFixed(2).replace('.', ',')}\n`;
+                total += item.preco * item.quantidade;
+            });
+            
+            mensagem += `\nTotal: R$ ${total.toFixed(2).replace('.', ',')}`;
+            
+            const numeroTelefone = '5511999999999'; 
+            const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${encodeURIComponent(mensagem)}`;
+            
+            window.location.href = urlWhatsApp;
+        });
